@@ -40,7 +40,7 @@ export const Books = () => {
                         <div className="list">
                             {visibleBooks.map((book) => {
                                 return (
-                                    <Book clickOnBook={(book) => navigate('/mainPage/' + (book.id))} book={book} key={book.id + book.etag} />
+                                    <Book clickOnBook={(book) => navigate('/bookstore-googleapi/' + (book.id))} book={book} key={book.id + book.etag} />
                                 )
                             })}
                         </div>

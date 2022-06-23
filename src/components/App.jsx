@@ -17,10 +17,10 @@ export default function App() {
       <Routes>
         <Route
           path="/"
-          element={<Navigate to='/mainPage' replace />}
+          element={<Navigate to='/bookstore-googleapi' replace />}
         />
-        <Route path="/mainPage" element={<Homepage />} />
-        <Route path="/mainPage/:id" element={<BookPage />} />
+        <Route path="/bookstore-googleapi" element={<Homepage />} />
+        <Route path="/bookstore-googleapi/:id" element={<BookPage />} />
       </Routes>
     </div>
   );
