@@ -1,38 +1,81 @@
-.App {
+.container {
+  font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  border-radius: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  padding: 0 0 20px 0;
+  background-color: rgba(62, 16, 78, 0.3);
+  width: 100%;
+}
+
+.search-panel h3 {
+  font-size: 30px;
+  line-height: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-panel input {
+  padding: 10px;
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.search-panel button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.list__item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(183, 179, 179, 0.3);
+  padding: 20px 10px 10px 10px;
+}
+
+.list__item .image {
+  align-self: center;
+  box-shadow: 8px 8px 8px rgba(163, 162, 162);
+}
+
+.list__item .categories {
+  text-decoration: underline;
+  color: rgb(135, 135, 135);
+}
+
+
+.list__item .title {
+  font-weight: bold;
+}
+
+.list__item .authors {
+  color: rgb(93, 92, 92);
 }
