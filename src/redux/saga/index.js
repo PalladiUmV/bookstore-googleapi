@@ -3,7 +3,7 @@ import { takeEvery, put, call, fork, all, select } from 'redux-saga/effects'
 
 const api = "AIzaSyBbUHmS9k4Wp-5_G651d9xYYL9ROpEDObg"
 
-async function getBooks(inputValue, startIndex = 0, sortBy = 'relevance', maxResults = 30) {
+async function getBooks(inputValue = 'js', startIndex = 0, sortBy = 'relevance', maxResults = 30) {
     const request = await axios.get(
         `https://www.googleapis.com/books/v1/volumes?q=${inputValue}&orderBy=${sortBy}&key=${api}&startIndex=${startIndex}&maxResults=${maxResults}`)
     return request.data

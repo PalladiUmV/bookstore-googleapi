@@ -41,7 +41,7 @@ const BookPage = () => {
 							<div className="book__description">{book.volumeInfo.textSnippet ? book.volumeInfo.textSnippet : ''}</div>
 						</div>
 					</div>
-					: <div style={{ color: 'black', fontSize: '40px', fontWeight: 'bold' }}>loading...</div>
+					: <div style={{ color: 'black', fontSize: '40px', fontWeight: 'bold' }}>Loading...</div>
 			}
 		</>
 	)
